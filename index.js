@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const Employee = require('./Main/lib/Employee');
+const Engineer = require('./Main/lib/Engineer');
 const generateHtml = require('./src/generatehtml');
 
 function init(){
