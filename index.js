@@ -2,9 +2,11 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const Employee = require('./Main/lib/Employee');
 const Engineer = require('./Main/lib/Engineer');
+const Intern = require('./Main/lib/Intern');
+const Manager = require('./Main/lib/Manager');
 const generateHtml = require('./src/generatehtml');
 
-function init(){
+function starterQuestions(){
   inquirer.prompt(
       { type: 'list',
       message: 'Please create your team?',
@@ -34,4 +36,3 @@ function init(){
 init();
 
 
- module.exports = generateHtml

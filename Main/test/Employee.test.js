@@ -2,18 +2,18 @@ const Employee = require("../lib/Employee");
 
 describe("Employee", () =>{
     describe("name", () => {
+        const employee = new Employee('Bradley Samuel', 1578956, 'b_man_sam@gmail.com' )
         it("should return a string of the employees name", () => {
-            const name = "Bradley Samuel";
-            result = new Employee().toEqual(name);
-            expect(Employee.name).stringContaining(name);
+            // result = new Employee().toEqual(name);
+            expect(employee.name).toEqual("Bradley Samuel");
         });
         it("should return a number for the id", () =>{
-            const id = 1578956;
-            expect(Employee.id).toBeCloseTo(id)
+            
+            expect(employee.id).toEqual(1578956)
         });
         it('should return the employees email address', () => {
-            const email = 'b_man_sam@gmail.com'
-            expect(Employee.email).stringContaining(email)
+           
+            expect(employee.email).toEqual('b_man_sam@gmail.com')
         });
     })
 })
