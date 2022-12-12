@@ -11,7 +11,7 @@ function starterQuestions(){
       { type: 'list',
       message: 'Please create your team?',
       name: 'startQuestion',
-      choices: ["Manager", "Team members","Intern ","Quit"]
+      choices: ["Manager", "Engineer","Intern ","Quit"]
       }) .then((response) =>{
       let choices = response.startQuestion
        // use a switch statement to pick the appropiate fuction for the user selction
@@ -21,11 +21,11 @@ function starterQuestions(){
               break;
 
           case "Team members":
-              teamMembers();
+              enginner();
               break;
 
           case "Intern":
-              Intern();
+              intern();
               break;
           case "Quit":
               quit();

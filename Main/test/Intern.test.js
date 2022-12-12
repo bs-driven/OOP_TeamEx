@@ -17,17 +17,17 @@ describe("Intern properties", ()=>{
     it("should returns the intern's school", () =>{
         expect(employee.school).toEqual('OSU')
     });
-})
+});
 
 
-describe("Intern methods",() =>{
+describe("Intern methods/functions",() =>{
     const employee = new Intern('Killua Zoldic', 546952, 'silentkill@gmail.com', 'OSU')
 
     it("should return the interns name", () =>{
         expect(employee.getName()).toEqual('Killua Zoldic')
     });
 
-    it("hould returns the intern's id number", () =>{
+    it("should returns the intern's id number", () =>{
         expect(employee.getId()).toEqual(546952)
     });
 
