@@ -106,6 +106,6 @@ const engineerCard = function (engineer) {
   
     const teamCards = teamArray.join('');
     const html = htmlPage(teamCards);
-    // console.log(teamCards)
     return html;
   }
+  module.exports = generateHtml;
